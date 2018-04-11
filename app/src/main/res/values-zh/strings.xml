@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ZeroVrHeadTracker</string>
+    <string name="choose_video">请选择要播放的视频</string>
+    <string name="install_file_manager">请先安装一个文件管理器</string>
+    <string name="player_core_system">Android System MediaPlayer</string>
+    <string name="player_core_exoplayer_1.x">ExoPlayer 1.X</string>
+    <string name="player_core_exoplayer_2.x">ExoPlayer 2.X</string>
+    <string name="player_core_ijkplayer">IJKPlayer</string>
+</resources>

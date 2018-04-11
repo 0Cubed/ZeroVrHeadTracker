@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <ImageView
+            android:id="@+id/ivSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:src="@drawable/ic_settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:src="@drawable/ic_pause" />
+
+        <TextView
+            android:id="@+id/tvCurrentPosition"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/ivPlayPause"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@null"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+        <SeekBar
+            android:id="@+id/sbProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toEndOf="@id/tvCurrentPosition"
+            android:layout_toStartOf="@+id/tvDuration"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:thumb="@drawable/seekbar_thumb"
+            android:thumbOffset="0dp" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_toStartOf="@+id/ivFullSmall"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@null"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/ivFullSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:src="@drawable/ic_fullscreen" />
+    </RelativeLayout>
+</FrameLayout>

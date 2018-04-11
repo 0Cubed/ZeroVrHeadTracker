@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerocubed.zerovrheadtracker.demo.AspectRatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aspectRatioFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.zerocubed.zerovrheadtracker.demo.AspectRatioFrameLayout
+        android:id="@+id/arflPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <com.zerocubed.zerovrheadtracker.demo.VrView
+            android:id="@+id/svPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.zerocubed.zerovrheadtracker.demo.AspectRatioFrameLayout>
+    <com.zerocubed.zerovrheadtracker.demo.PlayerController
+        android:id="@+id/playerController"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@null"
+        android:visibility="gone" />
+</com.zerocubed.zerovrheadtracker.demo.AspectRatioFrameLayout>
